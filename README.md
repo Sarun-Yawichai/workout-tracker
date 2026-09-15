@@ -1,4 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Workout Tracker
+
+แอพบันทึกผลการออกกำลังกาย แบ่งประเภทการออกกำลังกายรายวัน พร้อม dashboard สรุปภาพรวม
+
+🔗 **Live Demo:** [https://workout-tracker-xi-cyan.vercel.app/](https://workout-tracker-xi-cyan.vercel.app/)
+
+> หมายเหตุ: ตัว demo รัน SQLite บน `/tmp` ของ Vercel serverless ข้อมูลอาจ
+> รีเซ็ตเมื่อมี cold start หรือ deploy ใหม่ — เป็นพฤติกรรมที่ตั้งใจไว้สำหรับ
+> demo ไม่ใช่บั๊ก
+
+## Features
+
+- บันทึกผลออกกำลังกายผ่าน popup form (วันที่, ประเภท, ระยะเวลา, แคลอรี่, โน้ต)
+- แก้ไข/ลบรายการที่บันทึกไว้ได้ พร้อม popup ยืนยันก่อนลบ
+- Dashboard สรุปนาทีออกกำลังกายต่อวัน (7 วันล่าสุด) และสัดส่วนประเภทการออกกำลังกาย
+- แจ้งเตือนเมื่อบันทึก/ลบไม่สำเร็จ พร้อมปุ่มลองใหม่ โดยไม่ต้องกรอกข้อมูลซ้ำ
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org) (App Router, Server Actions)
+- [TypeScript](https://www.typescriptlang.org/)
+- [shadcn/ui](https://ui.shadcn.com/) + [Tailwind CSS](https://tailwindcss.com/)
+- [better-sqlite3](https://github.com/WiseLibs/better-sqlite3) — เก็บข้อมูลเป็นไฟล์ SQLite เดียว
+- [Recharts](https://recharts.org/) — กราฟสรุปผลบน dashboard
 
 ## Getting Started
 
